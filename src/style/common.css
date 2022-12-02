@@ -1,0 +1,25 @@
+#app,
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: PingFangSC-Regular;
+}
+
+.g-no-m {
+  margin: 0 !important;
+}
+
+.g-no-p {
+  padding: 0 !important;
+}
+
+.three-lines-omitted {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal !important;
+  word-wrap: break-word;
+}

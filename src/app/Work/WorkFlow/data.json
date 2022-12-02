@@ -1,0 +1,40 @@
+{
+  "code": "200",
+  "msg": "success",
+  "data": {
+    "tableId": 1,
+    "workFlowVersionId": "",
+    "workFlowDef": {
+      "name": "合同审批",
+      "publicFlag": 1,
+      "sortNo": 5,
+      "duplicateRemovelFlag": 1,
+      "optionTip": "",
+      "optionNotNull": 0,
+      "status": 1
+    },
+    "directorMaxLevel": 4,
+    "flowPermission": [],
+    "nodeConfig": {
+      "pkId": "sid-start-node",
+      "nodeName": "发起人",
+      "type": 0,
+      "flowPermission": "lucy",
+      "priorityLevel": "",
+      "settype": "",
+      "selectMode": "",
+      "selectRange": "",
+      "examineRoleId": "",
+      "directorLevel": "",
+      "replaceByUp": "",
+      "examineMode": "",
+      "noHanderAction": "",
+      "examineEndType": "",
+      "examineEndRoleId": "",
+      "examineEndDirectorLevel": "",
+      "ccSelfSelectFlag": "",
+      "conditionList": [],
+      "nodeUserList": []
+    }
+  }
+}

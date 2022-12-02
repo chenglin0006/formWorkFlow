@@ -1,0 +1,67 @@
+.permission-grid {
+  display: grid;
+  /* grid-template-rows: 1fr 1fr 1fr; // 分为3行 */
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5px;
+  grid-auto-rows: 50px;
+  grid-row-gap: 10px;
+  @media screen and (max-width: 1000px) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 750px) {
+    & {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .item {
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 2px 12px 0 #0000001a;
+    border-radius: 2px;
+    cursor: pointer;
+    overflow: hidden;
+    .item-header {
+      height: 66px;
+      font-size: 18px;
+      border-bottom: 1px solid #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 7px;
+    }
+    .item-org {
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5px;
+      font-size: 14px;
+      border-bottom: 1px solid #ebeef5;
+    }
+    .item-org-name {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .ant-btn {
+      width: 88px;
+    }
+    &.is-authorization {
+      background-color: #f5f5f5;
+      box-shadow: none;
+      .item-org,
+      .item-header {
+        border-bottom: 1px solid #cccccc;
+      }
+    }
+    .item-org:last-child {
+      border: none;
+    }
+    &:hover {
+      box-shadow: 0 10px 12px 5px #0000001a;
+      transition: all 0.6s;
+    }
+  }
+}

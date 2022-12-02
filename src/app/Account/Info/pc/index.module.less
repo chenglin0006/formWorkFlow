@@ -1,0 +1,141 @@
+.title {
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.content {
+  background-color: #ffffff;
+  border-radius: 2px;
+  padding: 80px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.descriptions {
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  :global {
+    .ant-descriptions-item {
+      padding-bottom: 20px;
+    }
+
+    .ant-descriptions-item-container {
+      align-items: center;
+
+      .ant-descriptions-item-label {
+        display: inline-block;
+        width: 30%;
+        flex: none;
+        font-size: 14px;
+        color: #333333;
+        text-align: right;
+        line-height: 22px;
+
+        &::after {
+          margin-right: 16px;
+        }
+      }
+
+      .ant-descriptions-item-content {
+        width: 70%;
+        flex: none;
+        align-items: center;
+        font-size: 14px;
+        color: #666666;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.uploadModal {
+  :global {
+    .ant-modal-body {
+    }
+  }
+
+  .uploadModalTitle {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+
+  .uploadModalInput {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .uploadModalFooter {
+    text-align: center;
+    :global {
+      .ant-form-item-control-input-content {
+        .ant-btn {
+          width: 88px;
+
+          &:not(:last-of-type) {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.appContent {
+  background-color: #ffffff;
+  border-radius: 2px;
+  padding: 30px 80px;
+  overflow: hidden;
+  padding-top: 24px;
+  .bindedTable {
+    margin-bottom: 32px;
+  }
+
+  .bindedTips {
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 16px;
+  }
+
+  .unbindedTips {
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 16px;
+  }
+}
+
+.appItem {
+  display: inline-block;
+  padding: 4px;
+  width: 70px;
+  text-align: center;
+  cursor: pointer;
+
+  .ant-avatar {
+    margin-bottom: 8px;
+  }
+
+  img {
+    width: 36px;
+  }
+
+  .appIcon {
+    margin-bottom: 5px;
+  }
+
+  .appName {
+    color: #666666;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+      color: #333333;
+    }
+  }
+}

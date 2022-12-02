@@ -1,0 +1,121 @@
+.title {
+  margin-bottom: 16px;
+
+  h1 {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+    margin: 0 0 8px;
+  }
+
+  .description {
+    font-size: 12px;
+    color: #999999;
+  }
+}
+
+.homepageWrapper {
+  :global {
+    .normalDiv {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.bannerDiv {
+  width: 100%;
+  touch-action: none;
+  margin-bottom: 16px;
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
+  .bannerImg {
+    width: 100%;
+    border-radius: 4px;
+  }
+  :global {
+    .slider.am-carousel {
+      touch-action: none;
+    }
+    .slider-list {
+      transition: height 0.3s;
+    }
+    .slider-frame {
+      border-radius: 4px;
+    }
+    .swiper-container {
+      border-radius: 4px;
+      .swiper-pagination {
+        bottom: 0 !important;
+      }
+      .swiper-wrapper {
+        align-items: center;
+      }
+      .swiper-pagination-bullet-active {
+        background: #928585 !important;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.gridWrap {
+  background-color: #fff;
+  border-radius: 4px 4px 0 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
+
+  .gridTitle {
+    padding: 10px 12px;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0;
+  }
+  :global {
+    .am-grid.am-grid-line .am-flexbox .am-flexbox-item:first-child::before {
+      background-color: #ffffff !important;
+    }
+    .am-grid.am-grid-line:not(.am-grid-carousel)::before {
+      border-color: #f5f5f5;
+    }
+    .am-grid.am-grid-line:not(.am-grid-carousel)::after {
+      background-color: #ffffff !important;
+    }
+    .am-grid.am-grid-line .am-flexbox:last-child::after {
+      background-color: #ffffff !important;
+    }
+    .am-grid-item-content {
+      padding: 0 !important;
+    }
+  }
+}
+
+.cardWrap {
+  padding: 18px 19px 16px 19px;
+  text-align: center;
+
+  .cardAvatar {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .cardTitle {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    line-height: 24px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    word-break: break-all;
+  }
+}

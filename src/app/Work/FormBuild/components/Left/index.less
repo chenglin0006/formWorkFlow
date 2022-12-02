@@ -1,0 +1,37 @@
+.box-bd-div {
+  position: relative;
+  color: #333333;
+  width: 180px;
+  height: 40px;
+  border: dashed 1px #e1e1e1;
+  margin-bottom: 10px;
+  &.box-drag {
+    .box-bd {
+      color: transparent;
+      &.dragging {
+        color: #333333;
+      }
+    }
+  }
+  .box-bd {
+    position: relative;
+    z-index: 10;
+    padding: 10px 20px;
+  }
+
+  .box-bd-static {
+    position: absolute;
+    padding: 10px 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.form-build-tab {
+  .ant-tabs-content-holder {
+    max-height: calc(~'100vh - 115px');
+    overflow: scroll;
+  }
+}

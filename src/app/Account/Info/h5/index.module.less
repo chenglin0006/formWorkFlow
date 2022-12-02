@@ -1,0 +1,37 @@
+.wrap {
+  .title {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .listWrap {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
+.listWrap {
+  .list {
+    margin-bottom: 16px;
+    :global {
+      .am-list-item .am-list-line .am-list-extra {
+        flex-basis: 70%;
+      }
+      .am-list-body div:not(:last-child) .am-list-line::after {
+        background-color: #eeeeee !important;
+      }
+      .am-list-item .am-list-line .am-list-content {
+        color: #333333;
+        font-size: 16px;
+      }
+      .am-list-item .am-list-line .am-list-extra {
+        color: #999999;
+      }
+      .am-list-body::before {
+        background-color: transparent !important;
+      }
+    }
+  }
+}

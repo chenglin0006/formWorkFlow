@@ -1,0 +1,69 @@
+@import '~antd/lib/style/themes/default.less';
+.bng-bind-container {
+  background-image: url('@/assets/img/login-bg.png');
+  background-position: 50%;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  justify-content: center;
+  .bind-div {
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 32px 32px 16px;
+    .title {
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 20px;
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      vertical-align: middle;
+    }
+  }
+  .bind-imgs {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    img {
+      width: 50px;
+      &.exchange {
+        width: 25px;
+        margin: 0 5px;
+      }
+    }
+    .icon-exchange {
+      color: #b9b9b9;
+      font-size: 20px;
+      &:before {
+        content: '\f362';
+      }
+    }
+  }
+
+  .bind-tips {
+    color: #40485b;
+    font-size: 14px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bng-bind-container {
+    .bind-div {
+      width: 432px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      box-shadow: 2px 2px 64px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+}

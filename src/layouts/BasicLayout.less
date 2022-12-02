@@ -1,0 +1,129 @@
+@import '~antd/lib/style/themes/default.less';
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  .logoContainer {
+    position: relative;
+    height: 64px;
+    padding-left: 24px;
+    overflow: hidden;
+    line-height: 64px;
+    transition: all 0.3s;
+
+    .logo {
+      display: inline-block;
+      height: 32px;
+      vertical-align: middle;
+    }
+
+    .title-wrapper {
+      display: inline-block;
+      margin: 0 0 0 12px;
+      color: #fff;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .sub-title {
+      font-size: 14px;
+    }
+  }
+  .left-sider-menu {
+    height: calc(~'100% - 64px');
+    overflow-y: auto;
+    // overflow-y:visible;
+    &::-webkit-scrollbar {
+      // display: none;
+      width: 2px;
+    }
+    // &::-webkit-scrollbar-thumb {
+    // 	width: 2px;
+    // }
+  }
+}
+
+.bnq-basiclayout-main {
+  transition: all 0.2s;
+
+  > .bnq-global-header {
+    background: #fff;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    z-index: 9;
+
+    .bnq-global-header-trigger {
+      height: 50px;
+      padding: calc((50px - 20px) / 2) 24px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.3s, padding 0s;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.025);
+      }
+    }
+
+    .bnq-global-header-right {
+      float: right;
+      height: 100%;
+      font-size: 16px;
+      overflow: hidden;
+
+      .bnq-global-header-action {
+        display: inline-block;
+        height: 100%;
+        padding: 0 6px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.65);
+        transition: all 0.3s;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.025);
+        }
+
+        > i {
+          color: rgba(0, 0, 0, 0.65);
+          vertical-align: middle;
+        }
+
+        .bnq-global-header-message-badge {
+          font-size: 14px;
+        }
+
+        .bnq-global-header-flag {
+          margin: calc((50px - 24px) / 2) 0;
+          vertical-align: top;
+        }
+
+        .bnq-global-header-avatar {
+          margin: calc((50px - 24px) / 2) 0;
+          margin-right: 8px;
+          vertical-align: top;
+          // color: #1890FF;
+          // background: rgba(255, 255, 255, 0.85);
+        }
+      }
+    }
+  }
+}
+
+.bnq-service-phone.ant-modal-confirm {
+  .ant-modal-confirm-btns {
+    margin-top: 16px;
+  }
+
+  .ant-modal-confirm-content {
+    margin: 0;
+  }
+}

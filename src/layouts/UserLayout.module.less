@@ -1,0 +1,74 @@
+@import '~antd/lib/style/themes/default.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background: #f0f2f5;
+  background-image: url('@/assets/img/login-bg.png');
+  // background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  // overflow: hidden;
+  .content {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .center {
+      width: 100%;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+
+      .logo {
+        width: 187px;
+        vertical-align: middle;
+      }
+
+      .title {
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        margin-left: 8px;
+        color: @heading-color;
+        font-weight: 600;
+        font-size: 28px;
+      }
+    }
+
+    .main {
+      padding: 32px 32px 16px;
+      background-color: transparent;
+      margin: 0 auto;
+      position: static;
+      .passwordLock {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        width: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    position: relative;
+    .content {
+      .main {
+        width: 432px;
+        border-radius: 4px 12px 4px 4px;
+        background-color: #ffffff;
+        box-shadow: 2px 2px 64px 0 rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+    }
+  }
+}

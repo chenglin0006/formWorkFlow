@@ -1,0 +1,60 @@
+.third-login-container {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 36px;
+  .third-div {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px #cccccc;
+    border-radius: 4px;
+    padding: 32px 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #999999;
+    margin-right: 16px;
+    .wx-img {
+      width: 30px;
+    }
+    .qywx-img {
+      width: 32px;
+    }
+    .fs-img {
+      width: 28px;
+    }
+    &:hover {
+      color: #333333;
+      border: solid 1px #666666;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    .third-title {
+      margin-top: 10px;
+    }
+  }
+
+  &.mobile {
+    flex-direction: column;
+    .third-div {
+      display: flex;
+      color: #333333;
+      padding: 14px 0;
+      border: solid 1px #cccccc;
+      margin-top: 43px;
+      .third-title {
+        margin-top: 0;
+        line-height: 20px;
+        height: 20px;
+        font-weight: 500;
+      }
+      img {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+}

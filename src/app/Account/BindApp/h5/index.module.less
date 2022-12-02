@@ -1,0 +1,79 @@
+.title {
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.content {
+  border-radius: 2px;
+  overflow: hidden;
+
+  .noShow {
+    text-align: center;
+    color: #999999;
+    padding: 10px;
+    padding-bottom: 0;
+    border-top: solid 1px #e1e1e1;
+  }
+
+  .bindedList {
+    background-color: #ffffff;
+    padding: 16px 0;
+    margin-bottom: 16px;
+
+    .bindedListItem {
+      :global {
+        .am-list-thumb img {
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+    }
+
+    :global {
+      .am-list-item .am-list-line .am-list-extra {
+        flex-basis: 80px;
+      }
+    }
+  }
+
+  .unBindList {
+    background-color: #ffffff;
+    padding: 16px 0;
+
+    .unBindListItemWrap {
+      padding: 0 16px;
+    }
+  }
+
+  .tips {
+    font-size: 14px;
+    color: #666666;
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.appItem {
+  display: inline-block;
+  padding: 4px;
+  width: 70px;
+  text-align: center;
+  cursor: pointer;
+
+  .appIcon {
+  }
+
+  .appName {
+    color: #666666;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+      color: #333333;
+    }
+  }
+}
